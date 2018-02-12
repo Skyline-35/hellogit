@@ -1,19 +1,22 @@
 #include <iostream>
+#include <string>
 #include <vector>
-#include "header.h"
+#include "Car.h"
 using namespace std;
 
 int main(){
-	vector <int> myVector;
+	vector <Car> myVector;
 	int myCar;
 	
-	for (int l = 0; l <= 3; l++){
-	cout << "Please enter values: ";
 	
+	cout << "Please enter values: ";
+	do {
+		
 	cin >> myCar;
 	
 	myVector.push_back(myCar);
-	
+	}while (myCar !=4);
+
 	cout << "myVector stores: " << myVector.size() << "numbers" << endl;
 	for (int i = 0; i < myVector.size(); i++)
 	{
